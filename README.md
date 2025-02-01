@@ -18,7 +18,7 @@ DataSet - _https://archive.ics.uci.edu/dataset/9/auto+mpg_
 •	**Split Dataset** – 80% training, 20% test data.<br>
 •	**Visualize Data** – Uses seaborn.pairplot() to analyze feature relationships.<br>
 •	**Compute Statistics** – Generates descriptive stats for numerical columns.<br>
-•	**Separate Features & Labels **– Extracts MPG as the target variable.<br>
+•	**Separate Features & Labels**– Extracts MPG as the target variable.<br>
 •	**Normalize Data** – Standardizes features using Z-score normalization.<br>
 •	**Build Model** – Defines a Neural Network with:<br>
      2 hidden layers (64 neurons, ReLU activation)<br>
@@ -30,7 +30,7 @@ DataSet - _https://archive.ics.uci.edu/dataset/9/auto+mpg_
 •	**Train Model** – Trains for 1000 epochs with a validation split.<br>
 •	**Monitor Training** – Stores training history and prints progress.<br>
 •	**Plot Training Performance** – Graphs MAE and MSE over epochs.<br>
-•	**Use Early Stopping **– Stops training when validation loss stagnates.<br>
+•	**Use Early Stopping**– Stops training when validation loss stagnates.<br>
 •	**Evaluate Model** – Computes Mean Absolute Error (MAE) on test data.<br>
 •	**Make Predictions** – Predicts MPG values and plots true vs. predicted.<br>
 •	**Analyze Errors** – Visualizes prediction errors using a histogram.<br>
@@ -54,12 +54,12 @@ Let's build our model. Here, we'll use a Sequential model with two densely conne
 
 **Conclusion**
 
-This notebook introduced a few techniques to handle a regression problem.
+This notebook introduced a few techniques to handle a regression problem.<br>
 
-  Mean Squared Error (MSE) is a common loss function used for regression problems (different loss functions are used for classification problems).
-  Similarly, evaluation metrics used for regression differ from classification. A common regression metric is Mean Absolute Error (MAE).
-  When numeric input data features have values with different ranges, each feature should be scaled independently to the same range.
-  If there is not much training data, one technique is to prefer a small network with few hidden layers to avoid overfitting.
+  Mean Squared Error (MSE) is a common loss function used for regression problems (different loss functions are used for classification problems).<br>
+  Similarly, evaluation metrics used for regression differ from classification. A common regression metric is Mean Absolute Error (MAE).<br>
+  When numeric input data features have values with different ranges, each feature should be scaled independently to the same range.<br>
+  If there is not much training data, one technique is to prefer a small network with few hidden layers to avoid overfitting.<br>
   Early stopping is a useful technique to prevent overfitting.
 
 
