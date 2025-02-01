@@ -21,11 +21,11 @@ DataSet - _https://archive.ics.uci.edu/dataset/9/auto+mpg_
 •	**Separate Features & Labels **– Extracts MPG as the target variable.<br>
 •	**Normalize Data** – Standardizes features using Z-score normalization.<br>
 •	**Build Model** – Defines a Neural Network with:<br>
-     2 hidden layers (64 neurons, ReLU activation)
-     1 output layer (regression output)
-     RMSprop optimizer & MSE loss
+     2 hidden layers (64 neurons, ReLU activation)<br>
+     1 output layer (regression output)<br>
+     RMSprop optimizer & MSE loss<br>
 •	**Initialize Model** – Creates the model instance.<br>
-•	**View Model Summary **– Displays the architecture.<br>
+•	**View Model Summary**– Displays the architecture.<br>
 •	**Test Initial Predictions** – Runs the model on sample input.<br>
 •	**Train Model** – Trains for 1000 epochs with a validation split.<br>
 •	**Monitor Training** – Stores training history and prints progress.<br>
@@ -37,7 +37,7 @@ DataSet - _https://archive.ics.uci.edu/dataset/9/auto+mpg_
 
 Some small information about the learning from the code and information about it.
 
-**In[12] **- Normalize the data
+**In[12]**- Normalize the data
 Look again at the train_stats block above and note how different the ranges of each feature are.
 It is good practice to normalize features that use different scales and ranges. Although the model might converge without feature normalization, it makes training more difficult, and it makes the resulting model dependent on the choice of units used in the input.
 Note: Although we intentionally generate these statistics from only the training dataset, these statistics will also be used to normalize the test dataset. We need to do that to project the test dataset into the same distribution that the model has been trained on
@@ -49,7 +49,7 @@ Caution: The statistics used to normalize the inputs here (mean and standard dev
 Build the model
 Let's build our model. Here, we'll use a Sequential model with two densely connected hidden layers, and an output layer that returns a single, continuous value. The model building steps are wrapped in a function, build_model, since we'll create a second model, later on.
 
-**In[20] **- This graph shows little improvement, or even degradation in the validation error after about 100 epochs. Let's update the model.fit call to automatically stop training when the validation score doesn't improve. We'll use an EarlyStopping callback that tests a training condition for every epoch. If a set amount of epochs elapses without showing improvement, then automatically stop the training.
+**In[20]**- This graph shows little improvement, or even degradation in the validation error after about 100 epochs. Let's update the model.fit call to automatically stop training when the validation score doesn't improve. We'll use an EarlyStopping callback that tests a training condition for every epoch. If a set amount of epochs elapses without showing improvement, then automatically stop the training.
 
 
 **Conclusion**
